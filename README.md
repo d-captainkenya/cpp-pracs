@@ -1,6 +1,6 @@
 # cpp-pracs
 
-A practice zone for C++
+A practice zone for C++ with w3schools.
 
 
 with:
