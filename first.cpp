@@ -45,11 +45,74 @@ int main() {
 
 
 
-#include <iostream>               //constants
+/*#include <iostream>               //constants
 using namespace std;
 int main() {
   const int length = 25;
   //length = 50;
   cout << length << '\n';
   return 0;
+}*/
+
+
+
+/*#include <iostream>                 //input
+using namespace std;
+int main() {
+  int x;
+  cout << "Enter number: ";
+  cin >> x;
+  cout << "Your number was " << x << endl;
+  return 0;
+}*/
+
+
+
+/*#include <iostream>
+using namespace std;
+int main() {
+  int x, y, sum;
+  cout << "Enter x: "; cin >> x;
+  cout << "Enter y: "; cin >> y;
+  sum = x+y;
+  cout << "Sum of x and y: " << sum << endl;
+  return 0;
+}*/
+/*#include <iostream>
+using namespace std;
+int main() {
+  int x, y, sum;
+  cout << "Enter x and y(separate by space): "; cin >> x; cin >> y;
+  sum = x+y;
+  cout << "Sum of x and y: " << sum << endl;
+  return 0;
+}*/
+
+
+
+#include <iostream>                     //Strings
+#include <string>
+using namespace std;
+int main() {
+  string fn="Kong ";
+  string ln= "king";
+  //cout << "Welcome " << fn +" "+ln << endl;
+  //cout << fn.append(ln) << endl;
+  cout << "Length of the string is: " << fn.length() << endl;
+
+  /*string newstrg = "Changeme";
+  newstrg[6] = 'M';
+  cout << newstrg << endl;*/
+
+  string fullname;
+  cout << "Enter full name: ";
+  getline(cin, fullname);
+  cout << "Fullname: " << fullname << endl;
+  return 0;
 }
+
+
+
+
+
+
