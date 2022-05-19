@@ -90,7 +90,7 @@ int main() {
 
 
 
-#include <iostream>                     //Strings
+/*#include <iostream>                     //Strings
 #include <string>
 using namespace std;
 int main() {
@@ -100,19 +100,30 @@ int main() {
   //cout << fn.append(ln) << endl;
   cout << "Length of the string is: " << fn.length() << endl;
 
-  /*string newstrg = "Changeme";
-  newstrg[6] = 'M';
-  cout << newstrg << endl;*/
+  //string newstrg = "Changeme";
+  //newstrg[6] = 'M';
+  //cout << newstrg << endl;
 
   string fullname;
   cout << "Enter full name: ";
   getline(cin, fullname);
   cout << "Fullname: " << fullname << endl;
   return 0;
+}*/
+
+
+
+#include <iostream>                 //maths library
+#include <cmath>
+using namespace std;
+int main (){
+  double x = 13.76, y = 64, z = 5;
+  //cout << max(x,y) << endl;
+  cout << round(x) << endl;
+  cout << sqrt(y) << endl;
+  cout << log(z) << endl;
+  cout << (x > y) << endl;      //boolean
+  return 0;
 }
-
-
-
-
 
 
