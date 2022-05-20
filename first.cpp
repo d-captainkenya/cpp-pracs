@@ -113,7 +113,7 @@ int main() {
 
 
 
-#include <iostream>                 //maths library
+/*#include <iostream>                 //maths library
 #include <cmath>
 using namespace std;
 int main (){
@@ -124,6 +124,37 @@ int main (){
   cout << log(z) << endl;
   cout << (x > y) << endl;      //boolean
   return 0;
-}
+}*/
+
+
+
+
+
+/*#include <iostream>                    //conditions
+using namespace std;
+int main() {
+  int x = 2;
+  int y = 52;
+  if (x > y) {
+    cout << "x is mkuu" << "\n";
+    }
+  else if (y > x) {
+    cout << "y is mkuu" << "\n";
+  }
+  else {
+    cout << x << " equals " << y << endl;
+  }
+}*/
+/*#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+  int temp = 15;                //ternary(shorthand if)
+  string result;
+  result = (temp < 25) ? "Light clothes." : "Jacket needed.";
+  cout << result << "\n";
+  return 0;
+}*/
+
 
 
