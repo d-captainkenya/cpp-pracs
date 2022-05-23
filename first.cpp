@@ -252,7 +252,7 @@ int main() {
   }
   return 0;
 }*/
-#include <iostream>        //continue: breaks one iteration from loop
+/*#include <iostream>        //continue: breaks one iteration from loop
 using namespace std;
 int main() {
   for (int i=0; i<10; i++) {
@@ -261,6 +261,32 @@ int main() {
     }
     cout << i << endl;
   }
+  return 0;
+}*/
+
+
+
+#include <iostream>                   //arrays
+using namespace std;
+
+int main() {
+  string bikes[3] = {"Kawasaki", "Yamaha", "BMW"};
+  int mynums[5] = {5, 7, 10, 15, 40};
+  mynums[4] = 57;
+  cout << mynums[4] << " " << bikes[0] << "\n";
+
+  cout << "My array: ";
+  for (int i=0; i<5; i++) {
+    cout << mynums[i] << " ";
+  }
+  cout << endl;
+
+  cout << "My array(again): ";
+  for (int element: mynums) {
+    cout << element << " ";
+  }
+  cout << endl;
+  
   return 0;
 }
 
