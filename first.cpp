@@ -191,10 +191,28 @@ int main() {
 
 
 
-#include <iostream>                    //while loop
+/*#include <iostream>                    //while loop
 using namespace std;
-int main() {
 
+int main() {
+    int i = 0;
+    while (i <= 5) {
+      cout << i << "\n";
+      i++;
+    }
+    return 0;
+}*/
+#include <iostream>   //do while
+using namespace std;
+
+int main() {
+  int i = 0;
+  do {
+    cout << i << endl;
+    i++;
+  }
+  while (i<=5);
+  return 0;
 }
 
 
