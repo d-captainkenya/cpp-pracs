@@ -202,7 +202,7 @@ int main() {
     }
     return 0;
 }*/
-#include <iostream>   //do while
+/*#include <iostream>   //do while
 using namespace std;
 
 int main() {
@@ -213,8 +213,26 @@ int main() {
   }
   while (i<=5);
   return 0;
-}
+}*/
 
+
+
+/*#include <iostream>                 //for loop
+using namespace std;
+int main() {
+  for (int x=0; x<5; x++) {
+    cout << x << endl;
+  }
+  return 0;
+}*/
+#include <iostream>
+using namespace std;
+int main() {
+  for (int x=0; x<=5; x++) {
+    cout << x  << endl;
+  }
+  return 0;
+}
 
 
 
