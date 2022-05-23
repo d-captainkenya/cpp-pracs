@@ -225,16 +225,44 @@ int main() {
   }
   return 0;
 }*/
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 int main() {
   for (int x=0; x<=5; x++) {
     cout << x  << endl;
   }
   return 0;
+}*/
+/*#include <iostream>
+using namespace std;
+int main() {
+  for (int x=0; x<=10; x+=2) {
+    cout << x  << endl;
+  }
+  return 0;
+}*/
+/*#include <iostream>       //break :breaks out of loop at 4
+using namespace std;
+int main() {
+  for (int i=0; i<10; i++) {
+    if (i == 4) {
+      break;
+    }
+    cout << i << endl;
+  }
+  return 0;
+}*/
+#include <iostream>        //continue: breaks one iteration from loop
+using namespace std;
+int main() {
+  for (int i=0; i<10; i++) {
+    if (i == 4) {
+      continue;
+    }
+    cout << i << endl;
+  }
+  return 0;
 }
-
-
 
 
 
