@@ -266,7 +266,7 @@ int main() {
 
 
 
-#include <iostream>                   //arrays
+/*#include <iostream>                   //arrays
 using namespace std;
 
 int main() {
@@ -287,6 +287,40 @@ int main() {
   }
   cout << endl;
   
+  return 0;
+}*/
+
+
+
+/*#include <iostream>                 //loop array
+using namespace std;
+int main() {
+  string names[3] = {"Bravo", "Papa", "Tango"};
+  for (int i=0; i<3; i++) {
+    cout << names[i] << endl;
+  }
+  return 0;
+}*/
+/*#include <iostream>       //print element index and value/add element
+using namespace std;
+int main() {
+  string builds[10] = {"Anniversary", "I&M", "Pension", "EHouse"};
+  builds[4] = "Stima";
+  for (int i=0; i<10; i++) {
+    cout << "Index " << i << " --> " << builds[i] << endl;
+  }
+  return 0;
+}*/
+#include <iostream>   //empty array/add elements later
+using namespace std;
+int main() {
+  string laps[5];
+  laps[0] = "Dell";
+  laps[1] = "HP";
+  for (int i=0; i<5; i++) {
+    cout << "index: " << i << ": " << laps[i] << endl;
+  }
+  //cout << laps[0] << endl;  //print specific element
   return 0;
 }
 
