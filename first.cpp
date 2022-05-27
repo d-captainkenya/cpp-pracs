@@ -311,7 +311,7 @@ int main() {
   }
   return 0;
 }*/
-#include <iostream>   //empty array/add elements later
+/*#include <iostream>   //empty array/add elements later
 using namespace std;
 int main() {
   string laps[5];
@@ -322,7 +322,40 @@ int main() {
   }
   //cout << laps[0] << endl;  //print specific element
   return 0;
-}
+}*/
+/*#include <iostream>       //get size of array
+using namespace std;
+int main() {
+  string roads[5] = {"EBypass", "NBypass", "SBypass", "C100", "Namanga"};
+  cout << "Array size in bytes: " << sizeof(roads) << endl; //returns size in bytes
+
+  int arraylength = sizeof(roads) / sizeof(string); //string are 32bytes
+  cout << "Array size:" << arraylength << endl;
+  return 0;
+}*/
+/*#include <iostream>                               //Multidimensional arrays
+#include <string>
+using namespace std;
+int main() {
+  //2 dimension array
+  int multinums[3][5] = {
+    {1, 2, 3, 0, 5},
+    {4, 5, 6, 1, 1},
+    {7, 8, 9, 1, 0}
+  };
+  //3 dimension array
+  string letters[2][2][2] = {
+    {
+      {"L", "J"},
+      {"D", "M"}
+    },
+    {
+      {"N", "B"},
+      {"G", "M"}
+    }
+  };
+  return 0;
+}*/
 
 
 
