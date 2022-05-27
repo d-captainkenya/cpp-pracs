@@ -301,7 +301,7 @@ int main() {
   }
   return 0;
 }*/
-/*#include <iostream>       //print element index and value/add element
+/*#include <iostream>             //print element index and value/add element
 using namespace std;
 int main() {
   string builds[10] = {"Anniversary", "I&M", "Pension", "EHouse"};
@@ -311,7 +311,7 @@ int main() {
   }
   return 0;
 }*/
-/*#include <iostream>   //empty array/add elements later
+/*#include <iostream>             //empty array/add elements later
 using namespace std;
 int main() {
   string laps[5];
@@ -320,10 +320,10 @@ int main() {
   for (int i=0; i<5; i++) {
     cout << "index: " << i << ": " << laps[i] << endl;
   }
-  //cout << laps[0] << endl;  //print specific element
+  //cout << laps[0] << endl;      //print specific element
   return 0;
 }*/
-/*#include <iostream>       //get size of array
+/*#include <iostream>             //get size of array
 using namespace std;
 int main() {
   string roads[5] = {"EBypass", "NBypass", "SBypass", "C100", "Namanga"};
@@ -333,7 +333,7 @@ int main() {
   cout << "Array size:" << arraylength << endl;
   return 0;
 }*/
-/*#include <iostream>                               //Multidimensional arrays
+/*#include <iostream>                //Multidimensional arrays
 #include <string>
 using namespace std;
 int main() {
@@ -356,6 +356,136 @@ int main() {
   };
   return 0;
 }*/
+/*#include <iostream>         //access multidimensional array elements
+#include <string>
+using namespace std;
+int main(){
+  string letters[2][4] = {
+    {"A", "B", "C", "D"},
+    {"E", "F", "G", "H"}
+  };
+  cout << letters[1][3] << "\n";
+}*/
+/*#include <iostream>         //change multidimensional array elements
+#include <string>
+using namespace std;
+int main() {
+  string initials[3][2] = {
+    {"JK", "OT"},
+    {"MD", "DM"},
+    {"OJ", "FJ"}
+  };
+  initials[1][0] = "TL";
+  cout << initials[1][0] << "\n";
+  return 0;
+}*/
+/*#include <iostream>           //Loop Multi-Dimensional array
+#include <string>
+using namespace std;
+int main(){
+  string lets[4][3] = {
+    {"l", "k", "j"},
+    {"h", "g", "f"},
+    {"d", "s", "a"},
+    {"p", "i", "u"}
+  };
+  for (int i=0; i<4; i++) {
+    for (int j=0; j<1; j++) {
+      cout << lets[i][j] << "\n";
+    }
+  };
+  return 0;
+}*/
+
+#include <iostream>                             //Small game of Battleship
+using namespace std;
+
+int main() {
+  // We put "1" to indicate there is a ship.
+  bool ships[4][4] = {
+    { 0, 1, 1, 0 },
+    { 0, 0, 0, 0 },
+    { 0, 0, 1, 0 },
+    { 0, 0, 1, 0 }
+  };
+
+  // Keep track of how many hits the player has and how many turns they have played in these variables
+  int hits = 0;
+  int numberOfTurns = 0;
+
+  // Allow the player to keep going until they have hit all four ships
+  while (hits < 4) {
+    int row, column;
+
+    cout << "Selecting coordinates\n";
+
+    // Ask the player for a row
+    cout << "Choose a row number between 0 and 3: ";
+    cin >> row;
+
+    // Ask the player for a column
+    cout << "Choose a column number between 0 and 3: ";
+    cin >> column;
+
+    // Check if a ship exists in those coordinates
+    if (ships[row][column]) {
+      // If the player hit a ship, remove it by setting the value to zero.
+      ships[row][column] = 0;
+
+      // Increase the hit counter
+      hits++;
+
+      // Tell the player that they have hit a ship and how many ships are left
+      cout << "Hit! " << (4-hits) << " left.\n\n";
+    } else {
+      // Tell the player that they missed
+      cout << "Miss\n\n";
+    }
+
+    // Count how many turns the player has taken
+    numberOfTurns++;
+  }
+
+  cout << "Victory!\n";
+  cout << "You won in " << numberOfTurns << " turns" << "\n";
+  
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
