@@ -396,8 +396,7 @@ int main(){
   };
   return 0;
 }*/
-
-#include <iostream>                             //Small game of Battleship
+/*#include <iostream>                             //Small game of Battleship
 using namespace std;
 
 int main() {
@@ -448,6 +447,19 @@ int main() {
 
   cout << "Victory!\n";
   cout << "You won in " << numberOfTurns << " turns" << "\n";
+  
+  return 0;
+}*/
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+
+  struct {
+    int noofcounties;
+    string capital;
+    char countryinitial;
+  } countrystructure;
   
   return 0;
 }
