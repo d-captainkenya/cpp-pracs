@@ -450,19 +450,79 @@ int main() {
   
   return 0;
 }*/
-#include <iostream>
+/*#include <iostream>                           //Structures
 #include <string>
 using namespace std;
 int main() {
 
   struct {
+    string name;
     int noofcounties;
     string capital;
     char countryinitial;
   } countrystructure;
-  
+
+  countrystructure.name = "Kenya";
+  countrystructure.noofcounties = 47;
+  countrystructure.capital = "Nairobi";
+  countrystructure.countryinitial = 'K';
+
+  cout << countrystructure.name << "\n";
+  cout << countrystructure.capital << endl;
   return 0;
-}
+}*/
+/*#include <iostream>             //One Structure in Multiple Variables
+#include <string>
+#include <iomanip>
+using namespace std;
+int main() {
+
+  struct {
+    string brand;
+    string model;
+    int year;
+  } Bike1, bike2;
+
+  Bike1.brand = "Kawasaki";
+  Bike1.model = "Ninja";
+  Bike1.year = 2015;
+
+  bike2.brand = "BMW";
+  bike2.model = "1000RR";
+  bike2.year = 2014;
+
+  cout << "***************Bikes in Stock*****************" << endl;
+  cout << Bike1.brand << setw(7) << Bike1.model << setw(7) << Bike1.year << endl;
+  cout << bike2.brand << setw(12) << bike2.model << setw(8) << bike2.year << endl;
+
+  return 0;
+}*/
+/*#include <iostream>                           //Named Structures
+#include <string>
+#include <iomanip>
+using namespace std;
+int main() {
+  struct car {
+    string brand;
+    string model;
+    int year;
+  };
+
+  car fcar;
+  fcar.brand = "Toyota";
+  fcar.model = "Avensis";
+  fcar.year = 2000;
+
+  car seccar;
+  seccar.brand = "Audi";
+  seccar.model = "XLR8";
+  seccar.year = 2004;
+
+  cout << fcar.brand << setw(10) << fcar.model << setw(7) << fcar.year << endl;
+  cout << seccar.brand << setw(9) << seccar.model << setw(10) << seccar.year<< endl;
+
+  return 0;
+}*/
 
 
 
