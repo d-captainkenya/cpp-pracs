@@ -450,6 +450,10 @@ int main() {
   
   return 0;
 }*/
+
+
+
+
 /*#include <iostream>                           //Structures
 #include <string>
 using namespace std;
@@ -523,6 +527,30 @@ int main() {
 
   return 0;
 }*/
+
+
+
+/*#include <iostream>                           //References
+using namespace std;
+int main() {
+
+  string food = "pasta and chicken";
+  string &meal = food;
+
+  cout << food << endl;
+  cout << meal << endl;
+  return 0;
+}*/
+#include <iostream>                         //memory address
+using namespace std;
+int main() {
+
+  int month = 7;
+  cout << &month << endl;
+  
+  return 0;
+}
+
 
 
 
