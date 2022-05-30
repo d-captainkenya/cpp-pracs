@@ -541,13 +541,56 @@ int main() {
   cout << meal << endl;
   return 0;
 }*/
-#include <iostream>                         //memory address
+/*#include <iostream>                         //memory address
 using namespace std;
 int main() {
 
   int month = 7;
   cout << &month << endl;
-  
+
+  return 0;
+}*/
+
+
+
+/*#include <iostream>                         //pointers
+using namespace std;
+int main() {
+  //pointer - variable that stores the memory address as its value.
+  string food = "oat";
+  string* ptr = &food;
+
+  cout << food << endl;
+  cout << &food << endl;
+  cout << ptr << endl;
+  return 0;
+}*/
+/*#include <iostream>                       //dereferencing
+using namespace std;
+int main() {
+
+  int year = 2023;
+  int* ptr = &year; // * creates a pointer variable.
+
+  cout << ptr << endl;//mem addr
+
+  cout << *ptr << endl;//variable value. * acts as a dereference operator.
+  return 0;
+}*/
+#include <iostream>                           //Modify Pointers
+using namespace std;
+int main() {
+
+  string comp = "dell";
+  string* ptr = &comp;
+
+  cout << ptr << endl;
+  cout << *ptr << "\n\n";
+
+  *ptr = "Lenovo";
+  cout << *ptr << endl;
+  cout << comp << endl; //changing pointers change original variable too
+
   return 0;
 }
 
