@@ -577,7 +577,7 @@ int main() {
   cout << *ptr << endl;//variable value. * acts as a dereference operator.
   return 0;
 }*/
-#include <iostream>                           //Modify Pointers
+/*#include <iostream>                           //Modify Pointers
 using namespace std;
 int main() {
 
@@ -592,8 +592,36 @@ int main() {
   cout << comp << endl; //changing pointers change original variable too
 
   return 0;
+}*/
+
+
+
+/*#include <iostream>                                 //Functions
+using namespace std;
+
+void myfunc() {
+  cout << "ColDev Function" << endl;
 }
 
+int main() { 
+  myfunc();
+
+  return 0;
+}*/
+#include <iostream>
+using namespace std;
+
+void prtcar();
+
+int main() {
+  prtcar();
+
+  return 0;
+}
+
+void prtcar() {
+  cout << "Car started." << endl;
+}
 
 
 
