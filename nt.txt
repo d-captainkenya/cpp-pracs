@@ -1,0 +1,2 @@
+g++ first.cpp -o program
+./program
