@@ -615,12 +615,11 @@ void prtcar();
 
 int main() {
   prtcar();
-
   return 0;
 }
 
 void prtcar() {
-  cout << "Car started." << endl;
+  cout << "separate function declaration and definition" << endl;
 }
 
 
