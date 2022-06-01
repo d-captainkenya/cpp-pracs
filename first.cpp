@@ -687,7 +687,7 @@ int main () {
 
   return 0;
 }*/
-#include <iostream>           //Pass Array to a Function
+/*#include <iostream>           //Pass Array to a Function
 using namespace std;
 
 void prtarrelements (int myarray[5]) {
@@ -701,8 +701,49 @@ int main () {
   prtarrelements(myarray);
 
   return 0;
+}*/
+
+/*#include <iostream>             //function overloading
+using namespace std;
+//Multiple functions can have same name as long as number and/or type of parameters are different.
+
+int plusint(int x, int y) {   //returns int
+  return x + y;
 }
 
+double plusint(double x, double y) {  //returns double
+  return x + y;
+}
+
+int main () {
+
+  double num1 = plusint(5, 7);
+  double num2 = plusint(1.5, 2.3);
+
+  cout << "Int: " << num1 << "\n";
+  cout << "Double: " << num2 << "\n";
+
+  return 0;
+}*/
+
+#include <iostream>       //recursion - making a function call itself.
+using namespace std;
+
+int sum(int k){
+  if (k > 0) {
+    return k + sum(k-1);
+  }
+  else {
+    return 0;
+  }
+}
+
+int main(){
+  int result = sum(10);
+  cout << result << endl;
+
+  return 0;
+}
 
 
 
