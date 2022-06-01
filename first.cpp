@@ -726,7 +726,7 @@ int main () {
   return 0;
 }*/
 
-#include <iostream>       //recursion - making a function call itself.
+/*#include <iostream>       //recursion - making a function call itself.
 using namespace std;
 
 int sum(int k){
@@ -743,8 +743,59 @@ int main(){
   cout << result << endl;
 
   return 0;
-}
+}*/
 
+
+/*#include <iostream>           //classes
+using namespace std;
+
+class Myclass {
+  public:
+    int mynum;
+    string mystring;
+
+  private:
+    int myprivnum;
+};
+
+int main(){
+  Myclass myobject;
+
+  myobject.mynum = 98;
+  myobject.mystring = "accessing class attributes";
+
+  cout << myobject.mystring << endl;
+  cout << myobject.mynum << endl;
+
+  return 0;
+}*/
+
+#include <iostream>         //multiple objects
+using namespace std;
+
+class Car {
+  public:
+    string brand;
+    string model;
+    int year;
+};
+
+int main() {
+  Car mycar1;
+  mycar1.brand = "Audi";
+  mycar1.model = "A8";
+  mycar1.year = 2019;
+
+  Car mycar2;
+  mycar2.brand = "Chevrolet";
+  mycar2.model = "Suburban";
+  mycar2.year = 2022;
+
+  cout << mycar1.brand << " " << mycar1.model << " " << mycar1.year << endl;
+  cout << mycar2.brand << " " << mycar2.model << " " << mycar2.year << endl;
+
+  return 0;
+}
 
 
 
