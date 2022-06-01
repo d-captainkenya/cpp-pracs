@@ -608,7 +608,7 @@ int main() {
 
   return 0;
 }*/
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 void prtcar();
@@ -620,6 +620,87 @@ int main() {
 
 void prtcar() {
   cout << "separate function declaration and definition" << endl;
+}*/
+/*#include <iostream>       //parameters
+using namespace std;
+
+void prtname(string fname) {
+  cout << fname << endl;
+}
+
+int main() {
+  prtname("Jones");
+  return 0;
+}*/
+/*#include <iostream>   //default parameters
+using namespace std;
+
+void prtcity(string city = "Konza") {
+  cout << city << endl;
+}
+
+int main() {
+  prtcity("Entebbe");
+  prtcity();
+  return 0;
+}*/
+/*#include <iostream>     //multiple parameters
+using namespace std;
+
+void person(string name, int age) {
+  cout << name << " is aged " << age << endl;
+}
+
+int main() {
+  person("Abel", 43);
+  return 0;
+}*/
+/*#include <iostream>         //return value
+using namespace std;
+
+int addfunc (int x, int y) {
+  return x + y;
+}
+
+int main() {
+  //int z = addfunc(50, 10);
+  cout << addfunc(50, 10) << endl;
+  return 0;
+}*/
+/*#include <iostream>    //pass by reference
+using namespace std;   //useful when you need to change the value of the arguments
+
+void swapnums (int &x, int &y) {
+  int z = x;
+  x = y;
+  y = z;
+}
+int main () {
+  int fnum = 50;
+  int sname = 70;
+
+  cout << "Before SWAP: " << fnum << " " << sname << endl;
+
+  swapnums(fnum, sname);
+
+  cout << "After SWAP: " << fnum << " " << sname << endl;
+
+  return 0;
+}*/
+#include <iostream>           //Pass Array to a Function
+using namespace std;
+
+void prtarrelements (int myarray[5]) {
+  for (int i=0; i<5; i++) {
+    cout << myarray[i] << endl;
+  }
+}
+
+int main () {
+  int myarray[5] = {1, 2, 3, 4, 5};
+  prtarrelements(myarray);
+
+  return 0;
 }
 
 
