@@ -799,6 +799,61 @@ int main() {
 
 
 
+/*#include <iostream>         //class methods definition inside class
+using namespace std;
+
+class Myclass {
+  public:
+    void mymethod () {
+      cout << "myclass method was called" << endl;
+    } 
+};
+
+int main() {
+
+  Myclass myobj;
+  myobj.mymethod();
+
+  return 0;
+}*/
+
+/*#include <iostream>         //class methods definition outside class
+using namespace std;
+
+class Myclass {
+  public:
+    void mymethod();
+};
+
+void Myclass::mymethod() {
+  cout << "myclass method was called" << endl;
+}
+
+int main() {
+  Myclass myobj;
+  myobj.mymethod();
+
+  return 0;
+}*/
+
+#include <iostream>        //class method definition outside class(with params)
+using namespace std;
+
+class Car {
+  public:
+    int speed(int maxspeed);
+};
+
+int Car::speed(int maxspeed) {
+  return maxspeed;
+}
+
+int main() {
+  Car car1;
+  cout << "First car goes at top(miles): " << car1.speed(390) << endl;
+}
+
+
 
 
 
