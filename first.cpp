@@ -770,7 +770,7 @@ int main(){
   return 0;
 }*/
 
-#include <iostream>         //multiple objects
+/*#include <iostream>         //multiple objects
 using namespace std;
 
 class Car {
@@ -795,7 +795,10 @@ int main() {
   cout << mycar2.brand << " " << mycar2.model << " " << mycar2.year << endl;
 
   return 0;
-}
+}*/
+
+
+
 
 
 
