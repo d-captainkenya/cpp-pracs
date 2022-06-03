@@ -836,7 +836,7 @@ int main() {
   return 0;
 }*/
 
-#include <iostream>        //class method definition outside class(with params)
+/*#include <iostream>        //class method definition outside class(with params)
 using namespace std;
 
 class Car {
@@ -851,8 +851,75 @@ int Car::speed(int maxspeed) {
 int main() {
   Car car1;
   cout << "First car goes at top(miles): " << car1.speed(390) << endl;
-}
+}*/
 
+
+
+/*#include <iostream>             //constructors
+using namespace std;
+
+class Myclass {
+  public:
+    Myclass() {
+      cout << "consructor: What's up? You called me!" << endl;
+    }
+};
+
+int main() {
+  Myclass myobj;
+
+  return 0;
+}*/
+
+/*#include <iostream>       //constructors params
+#include <string>
+using namespace std;
+
+class Car{
+  public:
+    string brand;
+    string model;
+    int year;
+
+    Car(string x, string y, int z) {
+      brand = x;
+      model = y;
+      year = z;
+    }
+};
+
+int main() {
+  Car mycar1("Lucid", " air ", 2019);
+  Car mycar2("Tesla ", "S ", 2020);
+
+  cout << mycar1.brand << mycar1.model << mycar1.year << endl;
+  cout << mycar2.brand << mycar2.model << mycar2.year << endl;
+  return 0;
+}*/
+
+#include <iostream>   //constructors outside the class
+using namespace std;
+class Car {
+  public:
+    string brand;
+    string model;
+    int year;
+
+    Car(string y, string x, int z);
+};
+Car::Car(string x, string y, int z) {
+  brand = x;
+  model = y;
+  year = z;
+}
+int main() {
+  Car car1("Ford", "Mustang", 1999);
+  Car car2("BMW", "X3", 2018);
+
+  cout << car1.brand << car1.model << car1.year << endl;
+  cout << car2.brand << car2.model << car2.year << endl;
+  return 0;
+}
 
 
 
