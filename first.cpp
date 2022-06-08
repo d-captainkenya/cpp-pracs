@@ -897,7 +897,7 @@ int main() {
   return 0;
 }*/
 
-#include <iostream>   //constructors outside the class
+/*#include <iostream>   //constructors outside the class
 using namespace std;
 class Car {
   public:
@@ -919,8 +919,32 @@ int main() {
   cout << car1.brand << car1.model << car1.year << endl;
   cout << car2.brand << car2.model << car2.year << endl;
   return 0;
+}*/
+
+
+#include <iostream>       //Access specifiers
+using namespace std;
+
+class Myclass{
+  public:
+    int x;
+  private:
+    int y;
+};
+
+int main() {
+  Myclass myobj;
+
+  myobj.x = 5;
+  myobj.y = 10;
+
+  return 0;
 }
 
+/*class Myclass{        //members of a class are private if you don't specify an access specifier
+  int x;
+  int y;
+};*/
 
 
 
