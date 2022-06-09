@@ -922,7 +922,7 @@ int main() {
 }*/
 
 
-#include <iostream>       //Access specifiers
+/*#include <iostream>       //Access specifiers
 using namespace std;
 
 class Myclass{
@@ -939,7 +939,7 @@ int main() {
   myobj.y = 10;
 
   return 0;
-}
+}*/
 
 /*class Myclass{        //members of a class are private if you don't specify an access specifier
   int x;
@@ -948,6 +948,33 @@ int main() {
 
 
 
+//Encapsulation, make "sensitive" data hidden from users.
+#include <iostream>                 //encapsulation
+using namespace std;
+
+class Employee{
+  private:
+    int salary;
+
+  public:
+    //setter
+    void setsalary(int s) {
+      salary = s;
+    }
+    //getter
+    int getsalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee MD;
+  MD.setsalary(500000);
+
+  cout << MD.getsalary() << endl;
+
+  return 0;
+}
 
 
 
