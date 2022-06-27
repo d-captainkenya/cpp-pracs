@@ -947,8 +947,7 @@ int main() {
 };*/
 
 
-
-//Encapsulation, make "sensitive" data hidden from users.
+/*sulation, make "sensitive" data hidden from users.
 #include <iostream>                 //encapsulation
 using namespace std;
 
@@ -973,6 +972,98 @@ int main() {
 
   cout << MD.getsalary() << endl;
 
+  return 0;
+}*/
+
+
+/*#include <iostream>             //inheritance
+using namespace std;
+class Vehicle{
+  public:
+    string brand = "Ford";
+    void honk() {
+      cout << "Hooting!! " << endl;
+    }
+};
+class Car: public Vehicle{
+  public:
+    string model = "Mustang";
+};
+int main() {
+  Car mycar;
+  cout << mycar.brand << " " << mycar.model << endl;
+  mycar.honk();
+
+  return 0;
+}*/
+
+
+/*#include <iostream>             //multilevel inheritance
+using namespace std;
+class Myclass{
+  public:
+    void myfunction() { 
+      cout << "Some parent class content." << endl;
+    }
+};
+class Mychild: public Myclass{
+};
+class Mygrandchild: public Mychild{
+};
+int main(){
+  Mygrandchild myobj;
+  myobj.myfunction();
+  return 0;
+}*/
+
+
+/*#include <iostream>               //multiple inheritance
+using namespace std;
+class Myclass{
+  public:
+    void myfunction(){
+      cout << "Some parent class content" << endl;
+    }
+};
+class Myotherclass{
+  public:
+    void myotherfunction(){
+    cout << "second class content" << endl;
+    }
+};
+class Mythirdclass: public Myclass, public Myotherclass{
+};
+int main(){
+  Mythirdclass myobj;
+  myobj.myfunction();
+  myobj.myotherfunction();
+  return 0;
+}*/
+
+
+#include <iostream>           //access specifiers
+using namespace std;
+class Employee{
+  protected:
+    int salary;
+};
+class Programmer: public Employee{
+  public:
+    int bonus;
+    void setsalary(int s){
+      salary = s;
+    }
+    int getsalary() { 
+      return salary; 
+      }
+};
+int main() {
+  Programmer myobj;
+  myobj.setsalary(75000);
+  myobj.bonus = 4500;
+
+  cout << "Salary: " << myobj.getsalary() << endl;
+  cout << "Bonus: " << myobj.bonus << endl;
   return 0;
 }
 
