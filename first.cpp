@@ -1125,7 +1125,58 @@ int main(){
 }*/
 
 
+/*#include <iostream>           //exceptions
+using namespace std;
+int main(){
+  try{
+    int age = 15;
+    if (age >= 18){
+      cout << "Proceed with caution." << "\n";
+    } else {
+      throw (age);
+      }
+    }
+    catch(int age){
+      cout << "Entry above your security(age) clearance." << "\n";
+    }
+  return 0;
+}*/
 
+
+/*#include <iostream>
+using namespace std;
+int main(){
+  try{
+    int pass = 4534;
+    if (pass == 1234){
+      cout << "Welcome Sir" << "\n";
+    } else {
+      throw 404;
+    }
+  }
+  catch (int notfound){
+    cout << "Incorrect pass" << "\n";
+  }
+  return 0;
+}*/
+
+
+#include <iostream>       //Any Type of Exception (...)
+using namespace std;
+int main() {
+  try{
+    string name = "Capuchinno";
+    if (name == "Captain"){
+      cout << "Captain on the bridge" << endl;
+    } else {
+      throw 401;
+    }
+  }
+  catch (...){
+      cout << "Not authorized!" << endl;
+  }
+  return 0;
+}
 
 
 
