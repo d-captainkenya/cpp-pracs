@@ -1068,7 +1068,7 @@ int main() {
 }*/
 
 
-#include <iostream>         //polymorphism - many classes related by inheritance.
+/*#include <iostream>         //polymorphism - many classes related by inheritance.
 using namespace std;
 class Animal{
   public:
@@ -1098,9 +1098,31 @@ int main() {
   mypig.animalsound();
 
   return 0;
-}
+}*/
 
 
+/*#include <iostream>           //create/write files
+#include <fstream>
+using namespace std;
+int main() {
+  ofstream myfile("test.txt");
+  myfile << "Test text here";
+  myfile.close();
+}*/
+
+
+/*#include <iostream>           //read files
+#include <fstream>
+using namespace std;
+int main(){
+  string mytext;
+  fstream readfiles("test.txt");
+  while(getline(readfiles, mytext)) {
+    cout << mytext << endl;
+  }
+  readfiles.close();
+  return 0;
+}*/
 
 
 
