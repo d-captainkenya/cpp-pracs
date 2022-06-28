@@ -1041,7 +1041,7 @@ int main(){
 }*/
 
 
-#include <iostream>           //access specifiers
+/*#include <iostream>           //inheritance access specifiers
 using namespace std;
 class Employee{
   protected:
@@ -1064,6 +1064,39 @@ int main() {
 
   cout << "Salary: " << myobj.getsalary() << endl;
   cout << "Bonus: " << myobj.bonus << endl;
+  return 0;
+}*/
+
+
+#include <iostream>         //polymorphism - many classes related by inheritance.
+using namespace std;
+class Animal{
+  public:
+    void animalsound(){
+      cout << "Animal making some sound" << endl;
+    }
+};
+class Pig: public Animal{
+  public:
+    void animalsound(){
+      cout << "Pig oint/grunts" << endl;
+    }
+};
+class Dog: public Animal{
+  public:
+    void animalsound(){
+      cout << "Dogs bark loudly" << endl;
+    }
+};
+int main() {
+  Animal myanimal;
+  Pig mypig;
+  Dog floky;
+
+  myanimal.animalsound();
+  floky.animalsound();
+  mypig.animalsound();
+
   return 0;
 }
 
